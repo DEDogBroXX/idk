@@ -31,7 +31,7 @@ jobs:
       # 编译 C++ 引擎（这一步会检查你上传的 baserom.us.z64）
       - name: Build Native Code
         run: |
-          cd app/jni/src
+          cd app/jni
           make PLATFORM=ANDROID ARCH=arm64
 
       # 打包成 APK
